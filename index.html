@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>I'm sorry</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+```
+body {
+  min-height: 100vh;
+  background: #1a1009;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Cormorant Garamond', serif;
+  padding: 60px 28px;
+}
+
+.container {
+  max-width: 480px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+.line {
+  display: block;
+  font-weight: 300;
+  line-height: 1.8;
+  letter-spacing: 0.015em;
+  opacity: 0;
+  transform: translateY(14px);
+  animation: fadeUp 1.1s ease forwards;
+}
+
+.line.main {
+  font-size: clamp(1.45rem, 4vw, 2rem);
+  color: #f0dece;
+}
+
+.line.soft {
+  font-size: clamp(1.1rem, 3vw, 1.45rem);
+  font-style: italic;
+  color: #c4967a;
+  margin-top: 6px;
+}
+
+.line.small {
+  font-size: clamp(0.95rem, 2.5vw, 1.2rem);
+  color: #9e7860;
+  font-style: italic;
+  margin-top: 4px;
+}
+
+.spacer {
+  display: block;
+  height: 28px;
+  opacity: 0;
+  animation: fadeUp 0s ease forwards;
+}
+
+/* staggered delays */
+.l1  { animation-delay: 0.4s; }
+.l2  { animation-delay: 1.4s; }
+.l3  { animation-delay: 2.5s; }
+.l4  { animation-delay: 3.5s; }
+.l5  { animation-delay: 4.6s; }
+.l6  { animation-delay: 5.6s; }
+.l7  { animation-delay: 6.6s; }
+.l8  { animation-delay: 7.5s; }
+.l9  { animation-delay: 8.4s; }
+.l10 { animation-delay: 9.3s; }
+.l11 { animation-delay: 10.1s; }
+.l12 { animation-delay: 11.0s; }
+
+.dot {
+  display: inline-block;
+  margin-top: 44px;
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background: #6b4030;
+  opacity: 0;
+  animation: fadeUp 1s ease 12s forwards;
+}
+
+@keyframes fadeUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+```
+
+  </style>
+</head>
+<body>
+  <div class="container">
+
+```
+<span class="line main l1">I'm sorry for everything I've done.</span>
+<span class="line soft l2">For every moment I made you feel like you were too much,<br>or not enough.</span>
+
+<span class="spacer l3"></span>
+
+<span class="line main l3">I'm sorry for the way I spoke to you.</span>
+<span class="line soft l4">For the times I said things I can't take back.</span>
+
+<span class="spacer l5"></span>
+
+<span class="line main l5">I'm sorry for the way I was.</span>
+<span class="line main l6">The way I am.</span>
+<span class="line soft l7">I know that's not easy to be around.<br>I know it's hurt you more than once.</span>
+
+<span class="spacer l8"></span>
+
+<span class="line main l8">I'll be better.</span>
+<span class="line soft l9">Not just saying it this time.</span>
+<span class="line small l10">You deserve someone who actually tries.</span>
+
+<span class="spacer l11"></span>
+
+<span class="line soft l11">I'm sorry, Ishu.</span>
+<span class="line small l12">I really am.</span>
+
+<div class="dot"></div>
+```
+
+  </div>
+</body>
+</html>
